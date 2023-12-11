@@ -47,3 +47,7 @@ Veja de onde tirei as referências para o design
 ```
 BASE: https://dummyjson.com/
 ```
+
+## WhatsApp do Desenvolvedor, Gilberto Gonçalves
+
++551196223-5618

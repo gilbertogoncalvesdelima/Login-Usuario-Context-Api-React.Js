@@ -1,5 +1,6 @@
 {
   "name": "teste-vaga",
+  "autor": "Gilberto Gonçalves de Lima, WhatsApp: +551196223-5618", 
   "version": "0.1.0",
   "private": true,
   "dependencies": {
