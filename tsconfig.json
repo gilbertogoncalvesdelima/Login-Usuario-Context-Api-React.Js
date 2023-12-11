@@ -1,0 +1,66 @@
+{
+  "compilerOptions": {
+    // Define a versão do ECMAScript para a qual o TypeScript compilará o código
+    "target": "es5",
+
+    // Define as bibliotecas disponíveis para o ambiente de execução, incluindo o DOM
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+
+    // Permite a inclusão de arquivos JavaScript durante a compilação do TypeScript
+    "allowJs": true,
+
+    // Ignora a verificação de bibliotecas de definição automaticamente geradas
+    "skipLibCheck": true,
+
+    // Permite interoperabilidade de CommonJS/AMD/es6 module styles
+    "esModuleInterop": true,
+
+    // Permite a importação de módulos padrão de sintaxe es6 mesmo quando usando commonjs
+    "allowSyntheticDefaultImports": true,
+
+    // Habilita o modo estrito do TypeScript
+    "strict": true,
+
+    // Garante que os nomes de arquivo sejam tratados de maneira consistente
+    "forceConsistentCasingInFileNames": true,
+
+    // Emite um erro quando um caso de switch não tem uma instrução break
+    "noFallthroughCasesInSwitch": true,
+
+    // Define o formato do módulo para esnext
+    "module": "esnext",
+
+    // Define como o TypeScript resolve os módulos
+    "moduleResolution": "node",
+
+    // Permite a importação de arquivos JSON diretamente no TypeScript
+    "resolveJsonModule": true,
+
+    // Isola os módulos uns dos outros
+    "isolatedModules": true,
+
+    // Não emite nenhum código JavaScript, usado apenas para verificar tipos
+    "noEmit": true,
+
+    // Define o JSX como react-jsx
+    "jsx": "react-jsx",
+
+    // Diretório de saída para os arquivos compilados
+    "outDir": "./dist",
+
+    // Diretório raiz do código-fonte TypeScript
+    "rootDir": "./src",
+
+    // Diretórios de tipos usados pelo TypeScript para pesquisa de tipos
+    "typeRoots": ["./src/types", "./node_modules/@types"]
+  },
+
+  // Lista de pastas incluídas no processo de compilação
+  "include": [
+    "src"
+  ]
+}

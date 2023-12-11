@@ -1,0 +1,47 @@
+/* Importa a fonte Roboto do Google Fonts com diferentes pesos e estilos */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap');
+
+/* Define estilos globais para todos os elementos */
+* {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+    font-family: 'Roboto', sans-serif; /* Define a fonte padrão como Roboto e fallback para sans-serif */
+}
+
+/* Estilos para o HTML e o corpo da página */
+html, body {
+    width: 100%; /* Ocupa 100% da largura da viewport */
+    height: 100%; /* Ocupa 100% da altura da viewport */
+    min-height: 100vh; /* Define a altura mínima como 100% da viewport */
+}
+
+/* Estilos para o contêiner raiz com id "root" */
+#root {
+    width: 100%; /* Ocupa 100% da largura disponível */
+    height: 100%; /* Ocupa 100% da altura disponível */
+    display: flex; /* Usa o modelo de layout flexível */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+}
+
+/* Estilos para a animação de carregamento */
+.loading {
+    width: 30px; /* Largura do spinner */
+    height: 30px; /* Altura do spinner */
+    border-radius: 50%; /* Borda circular */
+    background: 
+        radial-gradient(farthest-side,#e7e6ec 94%,#0000) top/5px 5px no-repeat, /* Gradiente radial para o fundo */
+        conic-gradient(#0000 30%,#f7f6fc); /* Gradiente cônico para a borda */
+    -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 5px),#000 0); /* Máscara para cortar o spinner em forma circular */
+    animation: s3 1s infinite linear; /* Adiciona animação de rotação */
+}
+
+/* Define a animação de rotação para o spinner */
+@keyframes s3 { 
+    100% { transform: rotate(1turn) } /* Rotaciona 360 graus para criar a animação completa */
+}
+
+/* Estilos para o efeito de esqueleto */
+.skeleton {
+    width: 98%; /* Largura de 98% para criar um efeito de borda ao redor do conteúdo */
+}
